@@ -13,8 +13,8 @@ Built on a stack of:
 ## Installation / Running
  
 #### Dependencies
- 1. nodejs
- 2. npm
+1. nodejs
+2. npm
 #### Installation
 1. clone this repo and navigate to it in a terminal
 2. copy environment specific file from sample: `cp env.json.sample env.json`
@@ -23,13 +23,13 @@ Built on a stack of:
    * You should see `checklist started @ localhost:7778` when the server has loaded. 
 5. Point a browser to [checklist](http://127.0.0.1:778/) and have fun!
 #### Configs
- 1. configs.json : currently just holds the port the server runs on
- 2. /public/js/angular/app.config.js : defines your test groups, starting url for tests
+1. configs.json : currently just holds the port the server runs on
+2. /public/js/angular/app.config.js : defines your test groups, starting url for tests
 
 ## Author
 #### Andrew Nichols
 
-#### Contributors
+##### Contributors
 - Mark Conrad
 - Summer Romack 
 - Meg MacDougall
