@@ -1,0 +1,140 @@
+{
+  "description": "Checklist header area tests. This is an example file to get you start. Feel free to delete it",
+  "filename": "navigationheader.json",
+  "name": "Navigation Header",
+  "start_url": "http://localhost:7778/",
+  "release": null,
+  "verified_by": null,
+  "test_group" : "nav",
+  "steps": [
+    {
+      "name": "the initial elements",
+      "verify": [
+        {
+          "data": null,
+          "name": "checklist logo",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "release test management",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "create test",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "user icon / logout",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        }
+      ]
+    },
+    {
+      "name": "checklist logo",
+      "verify": [
+        {
+          "data": null,
+          "name": "hovering highlights a different color and changes cursor",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "clicking logo redirects you to root",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        }
+      ]
+    },
+    {
+      "name": "release test management",
+      "verify": [
+        {
+          "data": null,
+          "name": "hovering highlights a different color and changes cursor",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "clicking redirects you to /merge",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        }
+      ]
+    },
+    {
+      "name": "create test",
+      "verify": [
+        {
+          "data": null,
+          "name": "hovering highlights a different color and changes cursor",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "clicking redirects you to /new",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        }
+      ]
+    },
+    {
+      "name": "user name",
+      "verify": [
+        {
+          "data": null,
+          "name": "hovering highlights a different color and changes cursor",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "clicking shows a dropdown with Not username?",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        },
+        {
+          "data": null,
+          "name": "clicking Not username? will redirect you to the greeting page (asking for your name)",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        }
+      ]
+    },
+    {
+      "name": "automated step",
+      "verify": [
+        {
+          "data": null,
+          "name": "use the automated feature to keep track of manual test cases you've converted into automated testing",
+          "note": null,
+          "verified": null,
+          "verified_by": null
+        }
+      ],
+      "automated": true
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+body {
+    background-color: #D7DFEA;
+    padding-top: 51px;
+}
+
+.indent-list {
+    text-indent: 1em;
+    margin-bottom: .5em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.verified {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.section { 
+    background-color: #BEE1FF;
+    padding: 5px 10px;
+    border-radius: 19px;
+    border-bottom: 2px solid #3B4954;
+    margin-bottom: 1em;
+    color: white;
+    border-right: 2px solid #3B4954;
+}
+
+.margin-top-2 {
+    margin-top: 2em;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2em;
+}
+
+.base-class {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+}
+
+.boxed {
+     border: 1px solid #787878;
+     box-shadow: 1px 1px 2px rgba(136, 136, 136, .5);
+     background-color: white;
+     padding: 10px 10px;
+     margin-bottom: 10px;
+}
+
+.boxed-demo {
+    border: 1px solid #787878;
+    box-shadow: 1px 1px 2px rgba(136, 136, 136, .5);
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+}
+
+.boxed-demo.bg-success {
+    background-color: #dff0d8;
+}
+
+.boxed-demo.bg-danger {
+    background-color: #f2dede;
+}
+
+/* -- NEW -- */
+.greeting-jumbo {
+    border-top: 1px solid #787878;
+    border-bottom: 1px solid #787878;
+}
+
+.release-input {
+    width: 4em !important;
+}
+
+.navbar {
+    margin-bottom: 5px;
+    border-bottom: solid #787878 1px;
+}
+
+.growl-container > .growl-item.ng-enter,
+.growl-container > .growl-item.ng-leave {
+  -webkit-transition: .75s linear all;
+  -moz-transition: .75s linear all;
+  -o-transition: .75s linear all;
+  transition: .75s linear all;
+}
+
+.test-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #666;
+    background-color: #D9E1EB;
+    border-top: 1px solid #787878;
+    border-right: 1px solid #787878;
+}
+
+.test-item-header {
+    color: white;
+    background-color: #606060;
+    cursor: pointer;
+}
+
+.test-item-sub-header {
+    color: white;
+    background-color: #aaa;
+    border-top: 1px solid #606060;
+    border-bottom: 1px solid #606060;
+    border-right: 1px solid #787878;
+    cursor: pointer;
+}
+
+.test-item-sub-header:hover {
+    background-color: aliceblue;
+    color: #333;
+    border-left: 10px solid #787878;
+}
+
+.test-item a {
+    color: #666;
+}
+
+.test-item a:hover {
+    color: #333;
+}
+
+.test-item:hover {
+    background-color: aliceblue;
+    color: #333;
+    cursor: pointer;
+    border-left: 10px solid #787878;
+}
+
+.test-item.active {
+    background-color: aliceblue;
+    border-right: none;
+    border-left: 10px solid #787878;
+}
+
+.test-item.bg-success, .test-item-sub-header.bg-success {
+    background-color: #DFF0D8;
+}
+
+.test-item.bg-success:hover, .test-item-sub-header.bg-success:hover {
+    background-color: aliceblue;
+}
+
+.test-item.text-success, .test-item-sub-header.text-success {
+    color: #3c763d;
+}
+
+.test-item.bg-danger, .test-item-sub-header.bg-danger {
+    background-color: #f2dede;
+}
+
+.test-item.bg-danger:hover, .test-item-sub-header.bg-danger:hover {
+    background-color: aliceblue;
+}
+
+.test-item.text-danger, .test-item-sub-header.text-danger {
+    color: #a94442;
+}
+
+.test-item.active.bg-success {
+    border-right: none;
+}
+
+.test-item.all-passed {
+    background-color: #DFF0D8;
+}
+
+#releaseForm {
+    padding: .5em 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.area-title {
+    font-size: 18px;
+}
+
+.verify-title {
+    width: 79%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.verify-buttons {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+#growl-holder {
+    width: 100%;
+}
+
+.multiSelect .multiSelectItem {
+    min-width: 215px;
+}
+
+.left-holder {
+    width: 50%;
+    display: inline-block;
+}
+
+.right-holder {
+    width: 49%;
+    display: inline-block;
+}
+
+select:required:invalid {
+  color: #999;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+.capitalize {
+   text-transform: capitalize;
+}
+
+#test-nav {
+    background-color: #D9E1EB;
+}
+
+#test-nav [aria-expanded="true"] .caret {
+    border: 5px solid transparent;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: super;
+    border-bottom: 5px solid;
+}
+
+#test-nav [aria-expanded="false"] .caret {
+    border: 5px solid transparent;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 5px solid;
+}

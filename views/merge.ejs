@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include included/head %>
+    <script src="/js/angular/controllers/mergeController.js"></script>
+    <script src="/js/angular/services/testService.js"></script>
+</head>
+<body ng-app="Checklist">
+    <% include included/nav %>
+    <div class="fluid-container" style="border-top: solid 1px #787878">
+        <div class="row-fluid" ng-controller="mergeController">
+            <div class="col-sm-12" style="background-color:aliceblue; padding-bottom:50px">
+                    <!-- step area -->
+                    
+                    <div class="text-center margin-top-2" ng-show="mergeList.length == 0">
+                        <h1>Nothing to Manage!</h4>
+                    </div>
+                    <h3 ng-show="mergeList.length > 0">Release Test Management</h3>
+                    <div class="boxed" ng-repeat="release in mergeList">
+                        <div style="padding-bottom:1em">
+                            <span style="width:70%; display:inline-block">
+                                <h3>{{release.release}}</h3>
+                            </span>
+                            <span style="width:29%; display:inline-block" class="text-right">
+                                <button ng-click="mergeRelease($index)" tabindex="-1" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-import"></span> Merge Release
+                                </button>
+                            </span>
+                        </div>
+
+                        <div class="boxed-demo" ng-repeat="test in release.tests">
+                            <span style="width:70%; display:inline-block">
+                                {{test.filename}} <a href="/edit/{{test.filename}}" target="_blank"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+                                <span ng-show="test.merge_into">{{test.merge_into}} (Adding {{test.steps.length}} steps)</span>
+                                <span ng-show="!test.merge_into">new regression!</span>
+                            </span>
+                            <span style="width:29%; display:inline-block" class="text-right">
+                                <button ng-click="deleteReleaseTest($parent.$index, test.filename)" class="btn btn-danger" tabindex="-1" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-trash"></span> Delete Test
+                                </button>
+                                <button ng-click="mergeReleaseTest($parent.$index, test.filename)" tabindex="-1" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-import"></span> Merge Test
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include included/head %>
+    <script src="/js/angular/controllers/greetingController.js"></script>
+    <script src="/js/angular/services/testService.js"></script>
+</head>
+<body ng-app="Checklist" ng-controller="greetingController">
+    <div class="jumbotron greeting-jumbo">
+        <div class="container">
+            <h1><span class="glyphicon glyphicon-ok"></span> <span class="glyphicon glyphicon-list"></span> Checklist</h1>
+            <p>
+                Hi friend, my name is Checklist, the coolest way to keep track of your manual testing, what's your name?
+            </p>
+            <p>
+                <form>
+                <div class="form-group margin-top-2">
+                    <div class="input-group">
+                      <div class="input-group-addon">My Name is </div>
+                      <input type="text" class="form-control input-lg" ng-model="verifiedBy" placeholder="{{placeholder}}" required>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-primary btn-lg" ng-click="sendName()">Hello!</button>
+                </div>
+                </form>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
