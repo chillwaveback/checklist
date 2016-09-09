@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/lotame/checklist/master/public/img/logo.png)
+![alt tag](https://raw.githubusercontent.com/Lotame/checklist/master/public/img/logo.png)
 
 
 ## About
