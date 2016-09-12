@@ -1,4 +1,5 @@
 ![alt tag](https://raw.githubusercontent.com/Lotame/checklist/master/public/img/logo.png)
+![alt tag](https://raw.githubusercontent.com/Lotame/checklist/master/public/img/dashboard.png)
 
 
 ## About
@@ -22,10 +23,10 @@ Built on a stack of:
 3. install node dependencies: `npm install`
 4. start application: `npm start` 
    * You should see `checklist started @ localhost:7778` when the server has loaded. 
-5. Point a browser to [checklist](http://127.0.0.1:778/) and have fun!
+5. Point a browser to [checklist](http://127.0.0.1:7778/) and have fun!
 
 #### Configs
-1. configs.json : currently just holds the port the server runs on
+1. env.json : currently just holds the port the server runs on
 2. /public/js/angular/app.config.js : defines your test groups, starting url for tests
 
 ## Author
